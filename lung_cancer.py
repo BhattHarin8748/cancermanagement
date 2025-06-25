@@ -46,7 +46,7 @@ def main():
 
     diagnosis = ""
 
-    if st.button("Predict Cancer Risk"):
+    if st.button("Predict"):
         try:
             input_data = [
                 float(age),
