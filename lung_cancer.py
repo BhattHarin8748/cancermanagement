@@ -1,7 +1,8 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-import numpy as np
+import numpy as pd
+
 
 # Load the trained model
 loaded_model = pickle.load(open(r"lung_cancer.sav", "rb"))
