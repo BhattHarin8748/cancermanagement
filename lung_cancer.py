@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-import numpy as pd
+import numpy as np
 
 
 # Load the trained model
@@ -24,7 +24,7 @@ treatment_type_dict = {'Chemotherapy': 0, 'Surgery': 1, 'Combined': 2, 'Radiatio
 def cancer_prediction(input_data):
     input_array = np.array(input_data).reshape(1, -1)
     prediction = loaded_model.predict(input_array)
-    return "High Risk of Lung Cancer" if prediction[0] == 0 else "Low Risk of Lung Cancer"
+     "High Risk of Lung Cancer" if prediction[0] == 0 else "Low Risk of Lung Cancer"
 
 # Streamlit UI
 def main():
